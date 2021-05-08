@@ -1,0 +1,21 @@
+<h1>First Component</h1>
+
+<!-- <input type="text" placeholder="Name .." [value]="name" (keyup) = "changeKey($event)">
+<p>{{name}}</p>
+<br> -->
+<input type="text" placeholder="Name .." [(ngModel)] = "name">
+<p>{{name}}</p>
+
+<!-- <input type="button" value="Change" (click) = "changeVal()"> -->
+
+<hr>
+
+<img style="width: 200px; height: 300px;" [src]="img">
+
+<div class="buttons">
+  <input type="button" value=">" (click)="showPrevious()">
+  <input type="button" value="<" (click)="showNext()">
+  <input type="button" value="Play" (click)="slideShow()">
+  <input type="button" value="Stop" (click)="stopSlideShow()">
+
+</div>
